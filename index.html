@@ -15,35 +15,44 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="partly_cloudy"
-            />
-            25°C | °F
-            <ul>
-              <li>Precipitación: 5%</li>
-              <li>Humedad: 51%</li>
-              <li>Viento: a 11 Km/h</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <h1>New York, USA</h1>
-            <ul>
-              <li>Friday 06:00</li>
-              <li>Clear</li>
-            </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="partly_cloudy"
+                />
+                <span class="float-left">
+                  <strong>25</strong>
+                  <span class="degree-units"
+                    >°C | <a href="#">°F</a></span
+                  ></span
+                >
+              </div>
+              <ul>
+                <li>Precipitación: 5%</li>
+                <li>Humedad: 51%</li>
+                <li>Viento: a 11 Km/h</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h1>New York, USA</h1>
+              <ul class="info-city">
+                <li>Friday 06:00</li>
+                <li>Clear</li>
+              </ul>
+            </div>
           </div>
         </div>
+        <small>
+          <a href="https://github.com/LKDolce/weather-app-2" target="_blank"
+            >Open-source code</a
+          >
+          by Elizabeth M. Coss
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/LKDolce/weather-app-2" target="_blank"
-          >Open-source code</a
-        >
-        by Elizabeth M. Coss
-      </small>
     </div>
     <script src="src/app.js"></script>
     <script
