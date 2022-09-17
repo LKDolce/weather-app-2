@@ -11,7 +11,9 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,23 +27,22 @@
                   alt="partly_cloudy"
                 />
                 <span class="float-left">
-                  <strong>25</strong>
+                  <strong id="temperature"></strong>
                   <span class="degree-units"
                     >°C | <a href="#">°F</a></span
                   ></span
                 >
               </div>
               <ul>
-                <li>Precipitación: 5%</li>
-                <li>Humedad: 51%</li>
-                <li>Viento: a 11 Km/h</li>
+                <li>Humedad: <span id="humidity">51</span>%</li>
+                <li>Viento: a <span id="wind"> </span> Km/h</li>
               </ul>
             </div>
             <div class="col-6">
-              <h1>New York, USA</h1>
+              <h1 id="city"></h1>
               <ul class="info-city">
                 <li>Friday 06:00</li>
-                <li>Clear</li>
+                <li id="description"></li>
               </ul>
             </div>
           </div>
