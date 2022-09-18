@@ -64,3 +64,12 @@ a {
   display: inline-block;
   padding-top: 8px;
 }
+
+.weather-temperature .active {
+  color: #464646;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
