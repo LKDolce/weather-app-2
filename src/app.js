@@ -28,12 +28,10 @@ function displayTemperature(response) {
     response.data.name);
   let description = (document.querySelector("#description").innerHTML =
     response.data.weather[0].description);
-  let humidity = (document.querySelector("#humidity").innerHTML = Math.round(
-    response.data.main.humidity
-  ));
-  let windSpeed = (document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  ));
+  let humidity = (document.querySelector("#humidity").innerHTML =
+    Math.round(response.data.main.humidity) + "%");
+  let windSpeed = (document.querySelector("#wind").innerHTML =
+    Math.round(response.data.wind.speed) + " km/h");
   let dateElement = (document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   ));
