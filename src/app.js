@@ -4,6 +4,10 @@ function formatDate(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
+  if (hours > 18 || hours < 7) {
+    let night = document.querySelector("#color-style");
+    night.classList.replace("dia", "noche");
+  }
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -139,5 +143,8 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemp);
+//change background
+//let light = document.querySelector("#color-style .weather-app");
+//let night = document.querySelector("#color-style .weather-app");
 
 search("New York");

@@ -87,6 +87,20 @@ small {
 #wind {
   color: #eb3dd4;
 }
+#color-style.dia {
+  background: linear-gradient(
+    -150.5deg,
+    rgba(255, 235, 104, 0.1) -1.2%,
+    rgba(61, 247, 255, 0.1) 119.2%
+  );
+}
+.noche {
+  background: radial-gradient(
+    919px at 1.7% 6.1%,
+    rgba(41, 58, 76, 0.1) 0%,
+    rgba(40, 171, 226, 0.1) 100.2%
+  );
+}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
